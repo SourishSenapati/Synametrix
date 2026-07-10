@@ -70,12 +70,12 @@ Calculates failure zones for tubular reactors constructed from Borosilicate Glas
 
 2. Run the techno-economic audit suite:
    ```bash
-   python biorefinery_tea_model.py
+   synametrix
    ```
 
 3. Generate the graphics:
    ```bash
-   python generate_figures.py
+   python -m synametrix.visualization.plotter
    ```
 
 ## Citation
