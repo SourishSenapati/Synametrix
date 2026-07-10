@@ -126,7 +126,9 @@ This computational framework was developed alongside the book chapter:
 Synametrix is protected under a Custom Proprietary & Academic License. 
 
 **For Academic Use:**
-You may use this software strictly for peer-reviewed academic research, provided you strictly and explicitly cite the author's original publication in any resulting manuscripts. You may not copy this repository and claim the structural architecture as your own.
+Use of this software by researchers, scientific institutions, or educational entities is subject to strict attribution covenants:
+* **Supplemental Reliance:** If utilized for data verification or minor referencing, you are legally bound to provide explicit bibliographic citation of the author's original prior art.
+* **Substantial Reliance:** If this computational architecture constitutes a core methodological component of your research, you are strictly prohibited from publishing without extending a formal offer of Joint Authorship to Sourish Senapati.
 
 ---
 
