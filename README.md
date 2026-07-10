@@ -4,11 +4,7 @@
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-**Recommended GitHub Repository Name:** `Synametrix`
-**Recommended GitHub Description:** `Physics-informed computational models validating the thermodynamic constraints and chemical OPEX of Anaerobic Digestion and Microalgae Biorefineries.`
-**Recommended GitHub Tags:** `techno-economic-analysis`, `thermodynamics`, `anaerobic-digestion`, `microalgae`, `biogas-upgrading`, `python`, `process-engineering`
 
----
 
 ## Technical Overview
 
