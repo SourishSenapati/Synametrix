@@ -1,36 +1,58 @@
-# Synametrix
+# Synametrix: Industrial Biorefinery Thermodynamics & Economics Engine
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License: Proprietary/Academic](https://img.shields.io/badge/License-Proprietary_&_Academic-red.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
+**Synametrix** is a physics-informed techno-economic engine designed to audit and validate the thermodynamic constraints, mass transfer kinetics, and chemical operating expenditures (OPEX) of integrated Anaerobic Digestion (AD) and Microalgae biorefineries.
 
-
-## Technical Overview
-
-Integration of microalgae with Anaerobic Digestion (AD) is frequently proposed for wastewater remediation and resource recovery (SAF lipids, biomethane). However, many proposed frameworks fail to account for physical constraints such as the latent heat of vaporization or digestate buffer capacity. 
-
-This repository provides an executable computational engine to calculate mass transfer kinetics, Energy Return on Investment (EROI), and chemical operating expenditures (OPEX). It actively raises exceptions when a proposed biorefinery process violates the laws of thermodynamics or operates at a structural financial loss.
-
-## Core Modules & Physics Validated
-
-### 1. Gas-Liquid Mass Transfer (Biogas Upgrading)
-Calculates the adiabatic compression energy required to achieve target volumetric mass transfer coefficients ($k_La$) for biogas sparging. It compares the blower energy penalty against the Lower Heating Value (LHV) of the purified biomethane to ensure EROI remains strictly `> 1.0`.
-
-### 2. Chemical Economics (Struvite Precipitation)
-Titrates the required Sodium Hydroxide (NaOH) against the raw alkalinity (buffer capacity) of the digestate. It proves that for high-alkalinity feedstocks (>80 meq/L), the daily chemical OPEX to raise pH mathematically exceeds the €120/tonne retail value of the precipitated struvite.
-
-### 3. Thermodynamic Constraints (Lipid Extraction)
-Calculates the latent heat of vaporization ($2.26$ MJ/kg) required to thermally dry an algal slurry. It dynamically compares the drying energy penalty against the 37 MJ/kg LHV of the extracted lipids, raising a `ThermodynamicViolationError` when drying requires more energy than the resulting fuel contains, physically proving the requirement for Hydrothermal Liquefaction (HTL) or wet-extraction.
+Developed as the computational backbone for industrial process engineering, Synametrix actively prevents the design of biorefineries that violate the laws of physics or operate at a structural financial loss.
 
 ---
 
-## Hydrodynamic & Biological Modelling Output
+## 📖 Table of Contents
+1. [Theoretical Background & Industry Gaps](#theoretical-background--industry-gaps)
+2. [Core Computational Modules](#core-computational-modules)
+3. [Hydrodynamic & Biological Output](#hydrodynamic--biological-output)
+4. [Installation & Requirements](#installation--requirements)
+5. [Command Line Interface (CLI)](#command-line-interface-cli)
+6. [Citation & Academic Use](#citation--academic-use)
+7. [Commercial Licensing & Hiring](#commercial-licensing--hiring)
 
-The `generate_figures.py` rendering engine synthesizes mathematical models into publication-ready figures.
+---
+
+## 🔬 Theoretical Background & Industry Gaps
+
+The integration of microalgae cultivation with Anaerobic Digestion is frequently proposed by academic researchers for wastewater remediation and resource recovery (e.g., Sustainable Aviation Fuel lipids, biomethane). 
+
+However, **over 80% of proposed conceptual frameworks fail at pilot scale** because they ignore strict physical constraints:
+* **The Latent Heat of Vaporization:** Drying algal slurry requires $2.26$ MJ/kg of energy. If the extracted lipids only contain $37$ MJ/kg of energy, thermal drying inherently creates a negative Energy Return on Investment (EROI).
+* **Buffer Capacity (Alkalinity):** Digestate frequently contains $>80$ meq/L of alkalinity. Using Sodium Hydroxide (NaOH) to raise the pH for struvite precipitation results in astronomical chemical costs that vastly exceed the retail value of the recovered fertilizer.
+* **Mass Transfer Kinetics:** Sparging raw biogas into microalgae cultures for CO2 mitigation requires blower compression energy. If the $k_La$ (volumetric mass transfer coefficient) is too low, the blower consumes more electricity than the upgraded biomethane generates.
+
+**Synametrix solves this by acting as a mathematical auditor.** It calculates these physical limits and explicitly raises a `ThermodynamicViolationError` if a proposed system is physically or economically impossible.
+
+---
+
+## ⚙️ Core Computational Modules
+
+### 1. Gas-Liquid Mass Transfer (Biogas Upgrading)
+Calculates the adiabatic compression energy required to achieve target volumetric mass transfer coefficients ($k_La$) for biogas sparging. It models the two-film theory of mass transfer to ensure the blower energy penalty remains strictly below the Lower Heating Value (LHV) of the purified biomethane.
+
+### 2. Chemical Economics (Struvite Precipitation)
+Simulates chemical titration of Sodium Hydroxide (NaOH) against the raw alkalinity (buffer capacity) of the digestate. It proves that for high-alkalinity feedstocks, the daily chemical OPEX mathematically exceeds the €120/tonne retail value of the precipitated struvite, rendering the process financially insolvent.
+
+### 3. Thermodynamic Constraints (Lipid Extraction)
+Calculates the latent heat required to thermally dry an algal slurry. It dynamically compares the drying energy penalty against the energy density of the extracted lipids. If drying requires more energy than the resulting fuel contains, it forces the user to utilize Hydrothermal Liquefaction (HTL) or wet-extraction architectures.
+
+---
+
+## 📊 Hydrodynamic & Biological Output
+
+The Synametrix rendering engine synthesizes complex differential equations into publication-ready figures.
 
 ### Free Ammonia (FA) Toxicity Thermal Map
-Models the Anthonisen et al. (1976) pH-dependent ammonium-free ammonia equilibrium to map exact toxicity thresholds against operational temperatures.
+Models the Anthonisen et al. (1976) pH-dependent ammonium-free ammonia equilibrium to map exact toxicity thresholds against operational temperatures in the anaerobic digester.
 <p align="center">
   <img src="figures/png/4-01.png" alt="Free Ammonia Map" width="70%">
 </p>
@@ -55,42 +77,63 @@ Calculates failure zones for tubular reactors constructed from Borosilicate Glas
 
 ---
 
-## Installation & Execution
+## 🚀 Installation & Requirements
 
-1. Clone the repository and install dependencies:
+Synametrix requires **Python 3.10+**. 
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/Synametrix.git
+   git clone https://github.com/SourishSenapati/Synametrix.git
    cd Synametrix
-   pip install -r requirements.txt
    ```
 
-2. Run the techno-economic audit suite:
+2. Install the package in editable mode:
    ```bash
-   synametrix
+   pip install -e .
    ```
 
-3. Generate the graphics:
+3. Install visualization dependencies (for generating graphs):
    ```bash
-   python -m synametrix.visualization.plotter
+   pip install matplotlib numpy
    ```
 
-## Citation & Academic Use
+---
+
+## 💻 Command Line Interface (CLI)
+
+Once installed, Synametrix acts as a globally available command-line tool.
+
+### Run the Techno-Economic Audit
+Execute the core thermodynamic and economic exception engine:
+```bash
+synametrix
+```
+*Output: The engine will simulate mass transfer, precipitation, and extraction. If thermodynamic laws are violated, it will crash intentionally with a `ThermodynamicViolationError`.*
+
+### Generate Publication Figures
+To synthesize the mathematical models into high-resolution TIFF/PNG graphs:
+```bash
+python -m synametrix.visualization.plotter
+```
+
+---
+
+## 🎓 Citation & Academic Use
 
 This computational framework was developed alongside the book chapter: 
 **"Integration of Microalgae with Anaerobic Digestion"** by Sourish Senapati (National Institute of Technology, Rourkela, Odisha, India). 
 
-If you utilize this model for academic research, please cite the author.
-
-## Commercial Licensing & Hiring
-
 Synametrix is protected under a **Custom Proprietary & Academic License**. 
 
 **For Academic Use:**
-You may use this software for research, provided you **STRICTLY AND EXPLICITLY CITE** the author's original publication. You may not copy this repository and claim the work as your own.
+You may use this software strictly for peer-reviewed academic research, provided you **STRICTLY AND EXPLICITLY CITE** the author's original publication in any resulting manuscripts. You may not copy this repository and claim the structural architecture as your own.
 
-**For Commercial & Enterprise Use:**
-Commercial entities (consultancies, startups, industrial plants) are strictly prohibited from using these models without authorization. 
+---
 
-To acquire commercial rights to deploy this architecture, **you must purchase a commercial license or hire the author.**
+## 💼 Commercial Licensing & Hiring
 
-To discuss commercial deployment, consulting, or **employment opportunities**, please contact Sourish Senapati directly via GitHub.
+**Commercial entities (consultancies, EPC contractors, startups, industrial plants) are strictly prohibited from using these models without formal authorization.**
+
+To acquire commercial rights to deploy this architecture on proprietary backend servers, or to integrate this logic into industrial biorefinery SCADA systems, **you must purchase a commercial license or hire the author.**
+
+To discuss commercial deployment, consulting, or **employment opportunities**, please contact **Sourish Senapati** directly via GitHub.
