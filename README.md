@@ -1,7 +1,7 @@
 # Synametrix
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![License: Proprietary/Academic](https://img.shields.io/badge/License-Proprietary_&_Academic-red.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 
@@ -83,11 +83,14 @@ If you utilize this model for academic research, please cite the author.
 
 ## Commercial Licensing & Hiring
 
-Synametrix is strictly open-source for academic and non-commercial research under the **GNU GPLv3** license. 
+Synametrix is protected under a **Custom Proprietary & Academic License**. 
+
+**For Academic Use:**
+You may use this software for research, provided you **STRICTLY AND EXPLICITLY CITE** the author's original publication. You may not copy this repository and claim the work as your own.
 
 **For Commercial & Enterprise Use:**
-Because this software is licensed under the GPLv3, any commercial entity that integrates this code into proprietary software or cloud backend systems is legally forced to open-source their entire platform. 
+Commercial entities (consultancies, startups, industrial plants) are strictly prohibited from using these models without authorization. 
 
-If your company wishes to bypass this restriction, use the models in a proprietary setting, or scale this architecture for industrial biorefineries, **you must purchase a commercial license or hire the author.**
+To acquire commercial rights to deploy this architecture, **you must purchase a commercial license or hire the author.**
 
 To discuss commercial deployment, consulting, or **employment opportunities**, please contact Sourish Senapati directly via GitHub.
