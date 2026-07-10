@@ -1,7 +1,7 @@
 # Synametrix
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 **Recommended GitHub Repository Name:** `Synametrix`
@@ -78,9 +78,20 @@ Calculates failure zones for tubular reactors constructed from Borosilicate Glas
    python -m synametrix.visualization.plotter
    ```
 
-## Citation
+## Citation & Academic Use
 
 This computational framework was developed alongside the book chapter: 
 **"Integration of Microalgae with Anaerobic Digestion"** by Sourish Senapati (National Institute of Technology, Rourkela, Odisha, India). 
 
-If you utilize this model for process engineering or academic research, please cite the author.
+If you utilize this model for academic research, please cite the author.
+
+## Commercial Licensing & Hiring
+
+Synametrix is strictly open-source for academic and non-commercial research under the **GNU GPLv3** license. 
+
+**For Commercial & Enterprise Use:**
+Because this software is licensed under the GPLv3, any commercial entity that integrates this code into proprietary software or cloud backend systems is legally forced to open-source their entire platform. 
+
+If your company wishes to bypass this restriction, use the models in a proprietary setting, or scale this architecture for industrial biorefineries, **you must purchase a commercial license or hire the author.**
+
+To discuss commercial deployment, consulting, or **employment opportunities**, please contact Sourish Senapati directly via GitHub.
