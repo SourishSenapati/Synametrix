@@ -1,5 +1,5 @@
 import pytest
-from syntrodynamatrix.models.struvite import StruviteReactor
+from synametrix.models.struvite import StruviteReactor
 
 def test_struvite_economic_trap():
     reactor = StruviteReactor(flow_m3_day=1000.0, tan_mg_l=800.0, po4_mg_l=80.0, alkalinity_meq_l=100.0)

@@ -1,10 +1,10 @@
-# SyntroDynaMatrix
+# Synametrix
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-**Recommended GitHub Repository Name:** `SyntroDynaMatrix`
+**Recommended GitHub Repository Name:** `Synametrix`
 **Recommended GitHub Description:** `Physics-informed computational models validating the thermodynamic constraints and chemical OPEX of Anaerobic Digestion and Microalgae Biorefineries.`
 **Recommended GitHub Tags:** `techno-economic-analysis`, `thermodynamics`, `anaerobic-digestion`, `microalgae`, `biogas-upgrading`, `python`, `process-engineering`
 
@@ -63,8 +63,8 @@ Calculates failure zones for tubular reactors constructed from Borosilicate Glas
 
 1. Clone the repository and install dependencies:
    ```bash
-   git clone https://github.com/YourUsername/SyntroDynaMatrix.git
-   cd SyntroDynaMatrix
+   git clone https://github.com/YourUsername/Synametrix.git
+   cd Synametrix
    pip install -r requirements.txt
    ```
 

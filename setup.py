@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="syntrodynamatrix",
+    name="synametrix",
     version="1.0.0",
     author="Sourish Senapati",
     author_email="sourish.senapati@example.com",
     description="Physics-informed computational models validating thermodynamic constraints and chemical OPEX of AD and Microalgae Biorefineries.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/YourUsername/SyntroDynaMatrix",
+    url="https://github.com/YourUsername/Synametrix",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[
@@ -23,7 +23,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "syntrodynamatrix=syntrodynamatrix.cli:main",
+            "synametrix=synametrix.cli:main",
         ],
     },
 )

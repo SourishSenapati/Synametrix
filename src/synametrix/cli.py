@@ -38,7 +38,7 @@ def run_audit():
     print("=========================================================")
 
 def main():
-    parser = argparse.ArgumentParser(description="Run the SyntroDynaMatrix TEA audit.")
+    parser = argparse.ArgumentParser(description="Run the Synametrix TEA audit.")
     parser.parse_args()
     run_audit()
 

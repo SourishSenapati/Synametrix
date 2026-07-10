@@ -1,6 +1,6 @@
 import pytest
-from syntrodynamatrix.models.biogas import BiogasUpgrader
-from syntrodynamatrix.models.exceptions import ThermodynamicViolationError
+from synametrix.models.biogas import BiogasUpgrader
+from synametrix.models.exceptions import ThermodynamicViolationError
 
 def test_biogas_upgrader_violation():
     upgrader = BiogasUpgrader(gas_flow_m3_hr=100.0)

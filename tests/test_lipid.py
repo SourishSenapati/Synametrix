@@ -1,6 +1,6 @@
 import pytest
-from syntrodynamatrix.models.lipid import LipidExtractor
-from syntrodynamatrix.models.exceptions import ThermodynamicViolationError
+from synametrix.models.lipid import LipidExtractor
+from synametrix.models.exceptions import ThermodynamicViolationError
 
 def test_lipid_extraction_thermal_trap():
     # 1000kg of wet algae (1% solids) with 40% lipids
