@@ -31,15 +31,15 @@ Unauthorized commercial use is intellectual property theft and will be pursued t
 
 ---
 
-## 4. ACADEMIC RECOGNITION (CITATION & CO-AUTHORSHIP)
-If you are an academic researcher, university student, or scientific institution utilizing this software, you are granted free use **under the strict condition of mandatory recognition**:
+## 4. ACADEMIC ATTRIBUTION AND JOINT AUTHORSHIP OBLIGATIONS
+For non-commercial use by academic researchers, scientific institutions, or educational entities, a limited, revocable license is granted subject to strict adherence to the following attribution covenants:
 
-### A. Minor Utilization (Data Verification & Reference)
-If The Software is used to verify your data, generate supplementary figures, or act as a minor reference point in your research, you **MUST explicitly cite** the Author's original publication in the methodology and references section of any resulting paper, journal, conference proceeding, or public presentation.
-**Required Citation:** *"Integration of Microalgae with Anaerobic Digestion" by Sourish Senapati (National Institute of Technology, Rourkela).*
+### 4.1. Supplemental Reliance and Citation Requirements
+In the event that The Software is utilized strictly in a supplemental, referential, or data-validation capacity, the Licensee is legally bound to provide explicit bibliographic citation of the Author’s original prior art in any resulting peer-reviewed manuscript, journal article, conference proceeding, or public presentation.
+**Mandatory Citation Format:** *"Integration of Microalgae with Anaerobic Digestion" by Sourish Senapati (National Institute of Technology, Rourkela).*
 
-### B. Major Utilization (Core Methodology & Co-Authorship)
-If The Software serves as the core computational engine for your research, or if you directly utilize the underlying Python thermodynamic/economic modules to generate the primary results of your paper, **you MUST offer Co-Authorship** to the Author (Sourish Senapati) on the resulting academic publication. You may not publish research entirely dependent on this computational framework without including the Author in the academic credits.
+### 4.2. Substantial Reliance and Joint Authorship Covenants
+In the event that The Software, its underlying thermodynamic models, or its computational architecture constitutes a substantial, foundational, or core methodological component of the Licensee's research, the Licensee is strictly prohibited from publishing said research without extending a formal offer of Joint Authorship to the Author (Sourish Senapati). Failure to include the Author in the academic attribution of publications heavily reliant upon this proprietary engine constitutes an explicit breach of this Agreement and intellectual property theft.
 
 ---
 
