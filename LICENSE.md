@@ -1,7 +1,7 @@
 # SYNAMETRIX PROPRIETARY & ACADEMIC RESEARCH END-USER LICENSE AGREEMENT (EULA)
 
 **Copyright (c) 2026 Sourish Senapati**
-**Affiliation:** National Institute of Technology, Rourkela, Odisha, India
+**Affiliation:** Chemical Engineer, Jadavpur University
 **Contact/Author:** https://github.com/SourishSenapati
 
 ---
@@ -36,7 +36,7 @@ For non-commercial use by academic researchers, scientific institutions, or educ
 
 ### 4.1. Supplemental Reliance and Citation Requirements
 In the event that The Software is utilized strictly in a supplemental, referential, or data-validation capacity, the Licensee is legally bound to provide explicit bibliographic citation of the Author’s original prior art in any resulting peer-reviewed manuscript, journal article, conference proceeding, or public presentation.
-**Mandatory Citation Format:** *"Integration of Microalgae with Anaerobic Digestion" by Sourish Senapati (National Institute of Technology, Rourkela).*
+**Mandatory Citation Format:** *"Integration of Microalgae with Anaerobic Digestion" by Sourish Senapati (Chemical Engineer, Jadavpur University).*
 
 ### 4.2. Substantial Reliance and Joint Authorship Covenants
 In the event that The Software, its underlying thermodynamic models, or its computational architecture constitutes a substantial, foundational, or core methodological component of the Licensee's research, the Licensee is strictly prohibited from publishing said research without extending a formal offer of Joint Authorship to the Author (Sourish Senapati). Failure to include the Author in the academic attribution of publications heavily reliant upon this proprietary engine constitutes an explicit breach of this Agreement and intellectual property theft.

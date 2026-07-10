@@ -121,7 +121,7 @@ python -m synametrix.visualization.plotter
 ## Citation & Academic Use
 
 This computational framework was developed alongside the book chapter: 
-"Integration of Microalgae with Anaerobic Digestion" by Sourish Senapati (National Institute of Technology, Rourkela, Odisha, India). 
+"Integration of Microalgae with Anaerobic Digestion" by Sourish Senapati (Chemical Engineer, Jadavpur University). 
 
 Synametrix is protected under a Custom Proprietary & Academic License. 
 
